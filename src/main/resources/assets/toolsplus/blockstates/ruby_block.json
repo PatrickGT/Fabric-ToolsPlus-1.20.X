@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "toolsplus:block/ruby_block"
+    }
+  }
+}

@@ -1,6 +1,10 @@
 {
   "item.toolsplus.ruby": "Ruby",
   "item.toolsplus.raw_ruby": "Raw Ruby",
+  "item.toolsplus.ruby_pickaxe": "Ruby Pickaxe",
 
-  "itemgroup.ruby": "Ruby Tutorial Group"
+  "block.toolsplus.ruby_block": "Block of Ruby",
+  "block.toolsplus.raw_ruby_block": "Block of Raw Ruby",
+
+  "itemgroup.ruby": "ToolsPlus"
 }

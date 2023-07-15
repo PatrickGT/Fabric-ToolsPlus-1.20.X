@@ -2,6 +2,7 @@ package net.patrickgt.toolsplus;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.patrickgt.toolsplus.block.ModBlocks;
 import net.patrickgt.toolsplus.item.ModItemGroups;
 import net.patrickgt.toolsplus.item.ModItems;
 import org.slf4j.Logger;
@@ -15,5 +16,6 @@ public class ToolsPlus implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 		ModItems.RegisterModItems();
+		ModBlocks.RegisterModBlocks();
 	}
 }
