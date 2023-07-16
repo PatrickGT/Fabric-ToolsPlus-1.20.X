@@ -1,6 +1,8 @@
 package net.patrickgt.toolsplus.item;
 
+import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.fabricmc.fabric.impl.client.itemgroup.CreativeGuiExtensions;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -20,7 +22,6 @@ public class ModItemGroups {
                         entries.add(ModItems.RUBY);
                         entries.add(ModBlocks.RUBY_BLOCK);
                         entries.add(ModBlocks.RAW_RUBY_BLOCK);
-                        entries.add(ModItems.RUBY_PICKAXE);
                     }).build());
     public static void registerItemGroups() {
         ToolsPlus.LOGGER.info("Registering item groups for " + ToolsPlus.MOD_ID);
