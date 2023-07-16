@@ -1,14 +1,17 @@
 package net.patrickgt.toolsplus.item;
+
+import net.fabricmc.yarn.constants.MiningLevels;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.util.Lazy;
 
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    RUBY(ModMiningLevels.MiningLevels.RUBY, 2532, 8.0f, 7.0f, 10, () -> Ingredient.ofItems(Items.DIAMOND));
-
+    RUBY(MiningLevels.DIAMOND, 1561, 8.0f, 1.0f, 22, () -> Ingredient.ofItems(ModItems.RUBY)
+    );
 
     private final int miningLevel;
     private final int itemDurability;
@@ -55,4 +58,5 @@ public enum ModToolMaterial implements ToolMaterial {
     public Ingredient getRepairIngredient() {
         return this.repairIngredient.get();
     }
-}
+    }
+

@@ -44,8 +44,6 @@ public class ModMiningLevels {
          */
         public static final int NETHERITE = 4;
 
-        public static final int RUBY = 5;
-
         private MiningLevels() {
         }
     }

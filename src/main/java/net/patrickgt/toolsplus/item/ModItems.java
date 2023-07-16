@@ -8,6 +8,9 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.patrickgt.toolsplus.ToolsPlus;
+import net.patrickgt.toolsplus.item.custom.ModAxeItem;
+import net.patrickgt.toolsplus.item.custom.ModHoeItem;
+import net.patrickgt.toolsplus.item.custom.ModPickaxeItem;
 
 import static net.minecraft.item.Items.COMMAND_BLOCK;
 
@@ -17,7 +20,12 @@ public class ModItems {
     public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
     public static final Item RAW_RUBY = registerItem("raw_ruby", new Item(new FabricItemSettings()));
 
-    public static final ToolItem RUBY_PICKAXE = new ToolsPlusPickaxeItem(ModToolMaterial.RUBY, 5, 4, new FabricItemSettings());
+    public static final Item RUBY_PICKAXE = registerItem("ruby_pickaxe", (Item)new ModPickaxeItem(ModToolMaterial.RUBY, 4, -2.8f, new FabricItemSettings()));
+
+    public static final Item RUBY_SWORD = registerItem("ruby_sword", (Item)new SwordItem(ModToolMaterial.RUBY, 6, -2.4f, new FabricItemSettings()));
+    public static final Item RUBY_AXE = registerItem("ruby_axe", (Item)new ModAxeItem(ModToolMaterial.RUBY, 3, -2.1f, new FabricItemSettings()));
+    public static final Item RUBY_HOE = registerItem("ruby_hoe", (Item)new ModHoeItem(ModToolMaterial.RUBY, 1, -2.1f, new FabricItemSettings()));
+    public static final Item RUBY_SHOVEL = registerItem("ruby_shovel", (Item)new ShovelItem(ModToolMaterial.RUBY, 0, 0f, new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUBY);
