@@ -26,6 +26,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RUBY_AXE);
                         entries.add(ModItems.RUBY_SHOVEL);
                         entries.add(ModItems.RUBY_HOE);
+                        entries.add(ModItems.MAGIC_RING);
                     }).build());
     public static void registerItemGroups() {
         ToolsPlus.LOGGER.info("Registering item groups for " + ToolsPlus.MOD_ID);

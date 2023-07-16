@@ -10,6 +10,7 @@ import net.minecraft.util.Identifier;
 import net.patrickgt.toolsplus.ToolsPlus;
 import net.patrickgt.toolsplus.item.custom.ModAxeItem;
 import net.patrickgt.toolsplus.item.custom.ModHoeItem;
+import net.patrickgt.toolsplus.item.custom.ModMagicRingItem;
 import net.patrickgt.toolsplus.item.custom.ModPickaxeItem;
 
 import static net.minecraft.item.Items.COMMAND_BLOCK;
@@ -19,6 +20,7 @@ public class ModItems {
 
     public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
     public static final Item RAW_RUBY = registerItem("raw_ruby", new Item(new FabricItemSettings()));
+    public static final Item MAGIC_RING = registerItem("magic_ring", new ModMagicRingItem(new FabricItemSettings()));
 
     public static final Item RUBY_PICKAXE = registerItem("ruby_pickaxe", (Item)new ModPickaxeItem(ModToolMaterial.RUBY, 4, -2.8f, new FabricItemSettings()));
 
